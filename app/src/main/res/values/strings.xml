@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">MobileProgramming</string>
+	<string name="dialog">Dialog</string>
+	<string name="toast">Toast</string>
 </resources>
