@@ -1,10 +1,9 @@
 package com.promecarus.mobileprogramming
 
-import android.content.DialogInterface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,29 +17,29 @@ class MainActivity : AppCompatActivity() {
             alertDialog.setTitle("Ini adalah judul alert dialog")
             alertDialog.setMessage("Ini adalah message alert dialog")
 
-            alertDialog.setPositiveButton("Ya", DialogInterface.OnClickListener{dialog, which ->
+            alertDialog.setPositiveButton("Ya") { _, _ ->
                 Toast.makeText(
                     this@MainActivity,
                     "Ya",
                     Toast.LENGTH_SHORT
                 ).show()
-            })
+            }
 
-            alertDialog.setNegativeButton("Tidak", DialogInterface.OnClickListener{dialog, which ->
+            alertDialog.setNegativeButton("Tidak") { _, _ ->
                 Toast.makeText(
                     this@MainActivity,
                     "Tidak",
                     Toast.LENGTH_SHORT
                 ).show()
-            })
+            }
 
-            alertDialog.setNeutralButton("Batal", DialogInterface.OnClickListener{dialog, which ->
+            alertDialog.setNeutralButton("Batal") { _, _ ->
                 Toast.makeText(
                     this@MainActivity,
                     "Batal",
                     Toast.LENGTH_SHORT
                 ).show()
-            })
+            }
 
             alertDialog.show()
         }
