@@ -11,41 +11,28 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_dialog.setOnClickListener{
-            val alertDialog = AlertDialog.Builder(this@MainActivity)
+        buttonDialog.setOnClickListener { dialog() }
 
-            alertDialog.setTitle("Ini adalah judul alert dialog")
-            alertDialog.setMessage("Ini adalah message alert dialog")
+        buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
+    }
 
-            alertDialog.setPositiveButton("Ya") { _, _ ->
-                Toast.makeText(
-                    this@MainActivity,
-                    "Ya",
-                    Toast.LENGTH_SHORT
-                ).show()
+    private fun dialog() {
+        val alertDialog = AlertDialog.Builder(this)
+            .setTitle("Judul")
+            .setMessage("Pesan yang tidak terlalu panjang")
+            .setPositiveButton("Ya") { _, _ ->
+                toast("Button ya terpilih")
             }
-
-            alertDialog.setNegativeButton("Tidak") { _, _ ->
-                Toast.makeText(
-                    this@MainActivity,
-                    "Tidak",
-                    Toast.LENGTH_SHORT
-                ).show()
+            .setNegativeButton("Tidak") { _, _ ->
+                toast("Button tidak terpilih")
             }
-
-            alertDialog.setNeutralButton("Batal") { _, _ ->
-                Toast.makeText(
-                    this@MainActivity,
-                    "Batal",
-                    Toast.LENGTH_SHORT
-                ).show()
+            .setNeutralButton("Batal") { _, _ ->
+                toast("Button batal terpilih")
             }
+        alertDialog.show()
+    }
 
-            alertDialog.show()
-        }
-
-        button_toast.setOnClickListener{
-            Toast.makeText(this, "Ini adalah toast", Toast.LENGTH_SHORT).show()
-        }
+    private fun toast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
