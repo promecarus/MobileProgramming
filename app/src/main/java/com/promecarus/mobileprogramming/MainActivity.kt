@@ -1,5 +1,6 @@
 package com.promecarus.mobileprogramming
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -14,9 +15,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
         binding.buttonDialog.setOnClickListener { dialog() }
         binding.buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
+        binding.buttonMove.setOnClickListener {
+            val i = Intent(this, MainActivity2::class.java)
+            startActivity(i)
+        }
     }
 
     override fun onStart() {
