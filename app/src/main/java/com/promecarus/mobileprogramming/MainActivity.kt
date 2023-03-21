@@ -5,16 +5,18 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.promecarus.mobileprogramming.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        buttonDialog.setOnClickListener { dialog() }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
+        binding.buttonDialog.setOnClickListener { dialog() }
+        binding.buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
     }
 
     override fun onStart() {
@@ -48,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun dialog() {
-        val alertDialog = AlertDialog.Builder(this)
+        AlertDialog.Builder(this)
             .setTitle("Judul")
             .setMessage("Pesan yang tidak terlalu panjang")
             .setPositiveButton("Ya") { _, _ ->
@@ -60,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             .setNeutralButton("Batal") { _, _ ->
                 toast("Button batal terpilih")
             }
-        alertDialog.show()
+            .show()
     }
 
     private fun toast(message: String) {
