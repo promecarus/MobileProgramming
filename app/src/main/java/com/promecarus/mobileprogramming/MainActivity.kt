@@ -1,6 +1,7 @@
 package com.promecarus.mobileprogramming
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,36 @@ class MainActivity : AppCompatActivity() {
         buttonDialog.setOnClickListener { dialog() }
 
         buttonToast.setOnClickListener { toast("Anda mengaktifkan toast") }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.e("onStart", "onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.e("onResume", "onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.e("onPause", "onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.e("onStop", "onStop")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.e("onRestart", "onRestart")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("onDestroy", "onDestroy")
     }
 
     private fun dialog() {
