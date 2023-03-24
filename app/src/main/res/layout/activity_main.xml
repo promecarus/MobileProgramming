@@ -7,32 +7,22 @@
 	tools:context=".MainActivity">
 
 	<Button
-		android:id="@+id/buttonDialog"
+		android:id="@+id/buttonTugas01"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/dialog"
-		app:layout_constraintBottom_toTopOf="@id/buttonToast"
-		app:layout_constraintEnd_toEndOf="parent"
+		android:text="@string/tugas01"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/buttonTugas02"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
 
 	<Button
-		android:id="@+id/buttonToast"
+		android:id="@+id/buttonTugas02"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/toast"
+		android:text="@string/tugas02"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@id/buttonDialog" />
-
-	<Button
-		android:id="@+id/buttonMove"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="@string/move"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
+		app:layout_constraintStart_toEndOf="@id/buttonTugas01"
+		app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
