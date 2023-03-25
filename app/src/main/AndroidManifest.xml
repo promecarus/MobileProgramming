@@ -12,7 +12,10 @@
 		android:theme="@style/Theme.MobileProgramming"
 		tools:targetApi="31">
 		<activity
-			android:name=".Tugas02Activity"
+			android:name=".Tugas02ImplicitIntentActivity"
+			android:exported="false" />
+		<activity
+			android:name=".Tugas02ExplicitIntentActivity"
 			android:exported="false" />
 		<activity
 			android:name=".Tugas01Activity"
