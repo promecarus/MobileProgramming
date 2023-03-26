@@ -1,8 +1,13 @@
 <resources>
 	<string name="app_name">MobileProgramming</string>
 	<string name="dialog">Dialog</string>
-	<string name="toast">Toast</string>
+	<string name="hint_email">Alamat email</string>
+	<string name="hint_map">Kode pos</string>
+	<string name="hint_nama">Nama lengkap</string>
+	<string name="hint_telepon">Nomor telepon</string>
 	<string name="move">Move</string>
+	<string name="submit">Submit</string>
+	<string name="toast">Toast</string>
 	<string name="tugas01">Tugas 1</string>
 	<string name="tugas02">Tugas 2</string>
 </resources>

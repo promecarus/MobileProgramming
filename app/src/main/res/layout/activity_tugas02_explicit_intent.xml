@@ -4,6 +4,75 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:padding="24dp"
 	tools:context=".Tugas02ExplicitIntentActivity">
+
+	<EditText
+		android:id="@+id/editTextName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="24dp"
+		android:autofillHints="name"
+		android:ems="10"
+		android:hint="@string/hint_nama"
+		android:inputType="textPersonName"
+		android:minHeight="48dp"
+		android:paddingTop="24dp"
+		app:layout_constraintBottom_toTopOf="@id/buttonSubmit"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<EditText
+		android:id="@+id/editTextEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:autofillHints="emailAddress"
+		android:ems="10"
+		android:hint="@string/hint_email"
+		android:inputType="textEmailAddress"
+		android:minHeight="48dp"
+		android:paddingTop="24dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+	<EditText
+		android:id="@+id/editTextTelephone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:autofillHints="phone"
+		android:ems="10"
+		android:hint="@string/hint_telepon"
+		android:inputType="phone"
+		android:minHeight="48dp"
+		android:paddingTop="24dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+	<EditText
+		android:id="@+id/editTextPostalCode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:autofillHints="postalCode"
+		android:ems="10"
+		android:hint="@string/hint_map"
+		android:inputType="number"
+		android:minHeight="48dp"
+		android:paddingTop="24dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/editTextTelephone" />
+
+	<Button
+		android:id="@+id/buttonSubmit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/submit"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
