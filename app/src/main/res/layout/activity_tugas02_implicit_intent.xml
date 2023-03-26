@@ -4,6 +4,137 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:padding="24dp"
 	tools:context=".Tugas02ImplicitIntentActivity">
 
+	<TextView
+		android:id="@+id/textViewNama"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:text="@string/hint_nama"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textViewDataNama"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewNama" />
+
+	<TextView
+		android:id="@+id/textViewEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:text="@string/hint_email"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewDataNama" />
+
+	<TextView
+		android:id="@+id/textViewDataEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+	<TextView
+		android:id="@+id/textViewTelepon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:text="@string/hint_telepon"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewDataEmail" />
+
+	<TextView
+		android:id="@+id/textViewDataTelepon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewTelepon" />
+
+	<TextView
+		android:id="@+id/textViewKodePos"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:text="@string/hint_map"
+		android:textSize="20sp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewDataTelepon" />
+
+	<TextView
+		android:id="@+id/textViewDataKodePos"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:textColor="@color/black"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewKodePos" />
+
+	<Button
+		android:id="@+id/buttonActionTelephoneCall"
+		android:layout_width="320dp"
+		android:layout_height="wrap_content"
+		android:text="@string/action_telephone_call"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textViewDataKodePos" />
+
+
+	<Button
+		android:id="@+id/buttonActionTelephoneSms"
+		android:layout_width="160dp"
+		android:layout_height="wrap_content"
+		android:text="@string/action_telephone_sms"
+		app:layout_constraintBottom_toTopOf="@id/buttonActionBrowser"
+		app:layout_constraintEnd_toStartOf="@id/buttonActionMap"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/buttonActionTelephoneCall" />
+
+	<Button
+		android:id="@+id/buttonActionMap"
+		android:layout_width="160dp"
+		android:layout_height="wrap_content"
+		android:text="@string/action_map"
+		app:layout_constraintBottom_toTopOf="@id/buttonActionEmail"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/buttonActionTelephoneSms"
+		app:layout_constraintTop_toBottomOf="@id/buttonActionTelephoneCall" />
+
+	<Button
+		android:id="@+id/buttonActionBrowser"
+		android:layout_width="160dp"
+		android:layout_height="wrap_content"
+		android:text="@string/action_browser"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/buttonActionEmail"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/buttonActionTelephoneSms" />
+
+	<Button
+		android:id="@+id/buttonActionEmail"
+		android:layout_width="160dp"
+		android:layout_height="wrap_content"
+		android:text="@string/action_email"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/buttonActionBrowser"
+		app:layout_constraintTop_toBottomOf="@id/buttonActionMap" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,9 @@
 <resources>
+	<string name="action_browser">cari</string>
+	<string name="action_email">mail</string>
+	<string name="action_map">map</string>
+	<string name="action_telephone_call">telepon</string>
+	<string name="action_telephone_sms">sms</string>
 	<string name="app_name">MobileProgramming</string>
 	<string name="dialog">Dialog</string>
 	<string name="hint_email">Alamat email</string>
