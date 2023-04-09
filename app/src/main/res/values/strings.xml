@@ -22,4 +22,6 @@
 	<string name="satu">Satu</string>
 	<string name="dua">Dua</string>
 	<string name="button">button</string>
+	<string name="picker_view">Picker View</string>
+	<string name="list_view">List View</string>
 </resources>

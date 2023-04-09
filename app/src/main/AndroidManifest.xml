@@ -18,6 +18,15 @@
 		android:theme="@style/Theme.MobileProgramming"
 		tools:targetApi="31">
 		<activity
+			android:name=".Tugas04ListViewActivity"
+			android:exported="false" />
+		<activity
+			android:name=".Tugas04PickerViewActivity"
+			android:exported="false" />
+		<activity
+			android:name=".Tugas04Activity"
+			android:exported="false" />
+		<activity
 			android:name=".Tugas03Layout02Activity"
 			android:exported="false" />
 		<activity
