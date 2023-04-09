@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this, Tugas02ExplicitIntentActivity::class.java)
             startActivity(i)
         }
+
+        binding.buttonTugas03.setOnClickListener {
+            val i = Intent(this, Tugas03Activity::class.java)
+            startActivity(i)
+        }
     }
 }
