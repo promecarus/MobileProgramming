@@ -15,10 +15,12 @@ class Tugas04ListViewActivity : AppCompatActivity() {
         binding = ActivityTugas04ListViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         title = "Tugas 4 | List View"
-
         beritaList.addAll(DataBerita.listData)
 
-        val adapter = BeritaAdapter(this, beritaList)
-        binding.listView.adapter = adapter
+        binding.listView.adapter = BeritaAdapter(this, beritaList)
+
+        binding.listView.setOnItemClickListener { _, _, position, _ ->
+            startActivity(Tugas04DetailViewActivity.newIntent(this, beritaList[position]))
+        }
     }
 }
