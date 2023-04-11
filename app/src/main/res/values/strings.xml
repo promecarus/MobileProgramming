@@ -29,4 +29,7 @@
 	<string name="time_format">%1$d:%2$02d</string>
 	<string name="date_format">%1$d %2$s %3$d</string>
 	<string name="kosong" />
+	<string name="judul">Judul</string>
+	<string name="deskripsi">Deskripsi</string>
+	<string name="gambar_berita">Gambar berita</string>
 </resources>

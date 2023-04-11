@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="100dp"
+	android:padding="10dp">
+
+	<ImageView
+		android:id="@+id/beritaGambar"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginEnd="10dp"
+		android:contentDescription="@string/gambar_berita"
+		tools:background="#fedede" />
+
+	<TextView
+		android:id="@+id/beritaJudul"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginBottom="8dp"
+		android:layout_toEndOf="@+id/beritaGambar"
+		android:lines="1"
+		android:padding="4dp"
+		android:text="@string/judul"
+		android:textColor="#4a4a4a"
+		android:textSize="16sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/beritaDeskripsi"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/beritaJudul"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentBottom="true"
+		android:layout_toEndOf="@+id/beritaGambar"
+		android:maxLines="2"
+		android:padding="4dp"
+		android:text="@string/deskripsi"
+		android:textColor="#757575"
+		android:textSize="12sp" />
+</RelativeLayout>
