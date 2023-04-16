@@ -31,7 +31,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/tugas03"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/buttonTugas05"
 		app:layout_constraintEnd_toStartOf="@id/buttonTugas04"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/buttonTugas01" />
@@ -41,8 +41,28 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="@string/tugas04"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/buttonTugas06"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toEndOf="@+id/buttonTugas03"
 		app:layout_constraintTop_toBottomOf="@+id/buttonTugas02" />
+
+	<Button
+		android:id="@+id/buttonTugas05"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/tugas05"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/buttonTugas04"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/buttonTugas03" />
+
+	<Button
+		android:id="@+id/buttonTugas06"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/tugas06"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/buttonTugas03"
+		app:layout_constraintTop_toBottomOf="@+id/buttonTugas04" />
 </androidx.constraintlayout.widget.ConstraintLayout>

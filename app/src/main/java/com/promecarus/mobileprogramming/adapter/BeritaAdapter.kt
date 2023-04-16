@@ -52,5 +52,4 @@ class BeritaAdapter(
 
         return view
     }
-
 }

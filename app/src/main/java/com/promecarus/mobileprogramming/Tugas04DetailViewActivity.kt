@@ -43,6 +43,5 @@ class Tugas04DetailViewActivity : AppCompatActivity() {
         binding.beritaDetailLink.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(intent.getStringExtra(EXTRA_LINK))))
         }
-//        Log.e("Gambar: ", intent.getStringExtra(EXTRA_GAMBAR).toString())
     }
 }
