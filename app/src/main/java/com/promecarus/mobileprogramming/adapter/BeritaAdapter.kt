@@ -43,7 +43,7 @@ class BeritaAdapter(
         val itemBerita = getItem(position) as Berita
 
         binding.beritaJudul.text = itemBerita.judul
-        binding.beritaDeskripsi.text = itemBerita.deskripsi
+        binding.beritaDeskripsi.text = itemBerita.isi
         Glide
             .with(context)
             .load(itemBerita.gambar)

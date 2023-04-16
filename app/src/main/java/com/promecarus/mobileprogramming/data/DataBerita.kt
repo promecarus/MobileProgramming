@@ -18,23 +18,6 @@ object DataBerita {
         "Berita 14"
     )
 
-    private val deskripsi = arrayOf(
-        "JAKARTA, KOMPAS.com - Direktur Hubungan Eksternal PT Toyota Motor Manufacturing Indonesia (TMMIN) Bob Azam mengungkapkan bahwa pihaknya bakal menerima kunjungan dari para jaringan diler Australia ke fasilitas pabrik Toyota Indonesia.",
-        "Deskripsi berita 2",
-        "Deskripsi berita 3",
-        "Deskripsi berita 4",
-        "Deskripsi berita 5",
-        "Deskripsi berita 6",
-        "Deskripsi berita 7",
-        "Deskripsi berita 8",
-        "Deskripsi berita 9",
-        "Deskripsi berita 10",
-        "Deskripsi berita 11",
-        "Deskripsi berita 12",
-        "Deskripsi berita 13",
-        "Deskripsi berita 14"
-    )
-
     private val gambar = arrayOf(
         "https://asset.kompas.com/crops/h3plYZMp6l61ULxdCiqF2hv7hWM=/0x0:1773x1182/750x500/data/photo/2022/04/14/6257da7e9f76c.jpg",
         "https://asset.kompas.com/crops/h3plYZMp6l61ULxdCiqF2hv7hWM=/0x0:1773x1182/750x500/data/photo/2022/04/14/6257da7e9f76c.jpg",
@@ -118,7 +101,6 @@ object DataBerita {
             for (position in judul.indices) {
                 val berita = Berita()
                 berita.judul = judul[position]
-                berita.deskripsi = deskripsi[position]
                 berita.gambar = gambar[position]
                 berita.isi = isi[position]
                 berita.link = link[position]

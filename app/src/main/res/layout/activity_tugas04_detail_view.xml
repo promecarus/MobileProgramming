@@ -5,18 +5,17 @@
 	android:layout_height="match_parent"
 	tools:context=".Tugas04DetailViewActivity">
 
-	<RelativeLayout
+	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:orientation="vertical"
 		android:padding="32dp">
 
 		<ImageView
 			android:id="@+id/beritaDetailGambar"
-			android:layout_width="100dp"
-			android:layout_height="100dp"
-			android:layout_alignParentStart="true"
-			android:layout_alignParentTop="true"
-			android:layout_alignParentEnd="true"
+			android:layout_width="300dp"
+			android:layout_height="200dp"
+			android:layout_gravity="center_horizontal"
 			android:contentDescription="@string/detail_gambar_berita"
 			android:paddingBottom="32dp"
 			tools:srcCompat="@tools:sample/avatars" />
@@ -25,9 +24,7 @@
 			android:id="@+id/beritaDetailJudul"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_below="@id/beritaDetailGambar"
-			android:layout_alignParentStart="true"
-			android:layout_alignParentEnd="true"
+			android:layout_gravity="center_horizontal"
 			android:gravity="center"
 			android:paddingBottom="32dp"
 			android:text="@string/judul"
@@ -35,11 +32,8 @@
 
 		<TextView
 			android:id="@+id/beritaDetailIsi"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_below="@id/beritaDetailJudul"
-			android:layout_alignParentStart="true"
-			android:layout_alignParentEnd="true"
 			android:paddingBottom="32dp"
 			android:text="@string/isi" />
 
@@ -47,9 +41,7 @@
 			android:id="@+id/beritaDetailLink"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_below="@id/beritaDetailIsi"
-			android:layout_alignParentStart="true"
-			android:layout_alignParentEnd="true"
+			android:layout_gravity="center_horizontal"
 			android:text="@string/open" />
-	</RelativeLayout>
+	</LinearLayout>
 </ScrollView>

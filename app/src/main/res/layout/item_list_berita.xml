@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="100dp"
+	android:layout_height="125dp"
 	android:padding="10dp">
 
 	<ImageView
@@ -39,7 +39,7 @@
 		android:layout_alignParentEnd="true"
 		android:layout_alignParentBottom="true"
 		android:layout_toEndOf="@+id/beritaGambar"
-		android:maxLines="2"
+		android:maxLines="3"
 		android:padding="4dp"
 		android:text="@string/deskripsi"
 		android:textColor="#757575"
