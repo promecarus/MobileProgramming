@@ -13,28 +13,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonTugas01.setOnClickListener {
-            val i = Intent(this, Tugas01Activity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, Tugas01Activity::class.java))
         }
 
         binding.buttonTugas02.setOnClickListener {
-            val i = Intent(this, Tugas02ExplicitIntentActivity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, Tugas02ExplicitIntentActivity::class.java))
         }
 
         binding.buttonTugas03.setOnClickListener {
-            val i = Intent(this, Tugas03Activity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, Tugas03Activity::class.java))
         }
 
         binding.buttonTugas04.setOnClickListener {
-            val i = Intent(this, Tugas04Activity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, Tugas04Activity::class.java))
         }
 
         binding.buttonTugas05.setOnClickListener {
-            val i = Intent(this, Tugas05FragmentListActivity::class.java)
-            startActivity(i)
+            startActivity(Intent(this, Tugas05FragmentListActivity::class.java))
+        }
         }
     }
 }
