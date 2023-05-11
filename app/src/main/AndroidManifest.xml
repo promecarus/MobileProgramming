@@ -22,6 +22,18 @@
 		android:theme="@style/Theme.MobileProgramming"
 		tools:targetApi="31">
 		<activity
+			android:name=".HelpActivity"
+			android:exported="false" />
+		<activity
+			android:name=".SettingActivity"
+			android:exported="false" />
+		<activity
+			android:name=".AboutActivity"
+			android:exported="false" />
+		<activity
+			android:name=".Tugas06RecyclerViewContextMenuActivity"
+			android:exported="false" />
+		<activity
 			android:name=".Tugas05FragmentListActivity"
 			android:exported="false" />
 		<activity

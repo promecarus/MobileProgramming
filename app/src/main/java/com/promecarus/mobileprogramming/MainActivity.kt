@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         binding.buttonTugas05.setOnClickListener {
             startActivity(Intent(this, Tugas05FragmentListActivity::class.java))
         }
+
+        binding.buttonTugas06.setOnClickListener {
+            startActivity(Intent(this, Tugas06RecyclerViewContextMenuActivity::class.java))
         }
     }
 }
